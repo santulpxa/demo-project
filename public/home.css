@@ -1,0 +1,116 @@
+/* General CSS */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+.main-body {
+  border: 1px solid black;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+}
+.header {
+  height: 3.5rem;
+  border-bottom: 1px solid;
+}
+
+/* company logo */
+.header img {
+  height: 4rem;
+  width: 8rem;
+}
+.logo {
+  margin: 0 0 0.5rem 5rem;
+}
+
+.hero {
+  height: calc(100vh - 5rem);
+  overflow: auto;
+}
+.heading {
+  height: 2rem;
+  width: 100%;
+  font-size: larger;
+  text-align: center;
+  font-weight: 800;
+  color: red;
+}
+/* .footer{
+    height: 3.5rem;
+    border-top: 1px solid;
+} */
+table,
+th,
+td {
+  border: 1px solid pink;
+  border-collapse: collapse;
+}
+
+/* Setting Table width to 100% */
+table {
+  width: 100%;
+}
+
+.add-color {
+  background-color: rgb(202, 255, 255);
+}
+
+/* CSS CLASSES for setting the tables height and width */
+.table-head-statements {
+  width: 50%;
+}
+/* This was not needed */
+.table-head-year {
+  width: 25%;
+}
+/* ----------------------------------------------- */
+
+/* Styling the Inputs type Number */
+input[type="number"] {
+  height: 10px;
+  width: 90%; /* Set the width of the input */
+  padding: 10px; /* Add padding for better spacing */
+  font-size: 16px; /* Set font size */
+  border: none; /* Border color and thickness */
+  border-radius: 4px; /* Rounded corners */
+  background-color: white; /* Background color */
+  text-align: center; /* Center text */
+}
+
+input[type="number"]:focus {
+  border-color: #4caf50; /* Green border when focused */
+  outline: none; /* Remove default outline */
+  background-color: #e8f5e9; /* Light green background when focused */
+}
+
+/* button styling */
+.btn{
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Style the input[type="submit"] button */
+.btn input[type="submit"] {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding */
+  font-size: 16px; /* Set font size */
+  cursor: pointer; /* Change cursor to pointer */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition on hover */
+}
+
+/* Add a hover effect to change background and scale the button */
+.btn input[type="submit"]:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly increase the size */
+}
+
+/* Optional: Add a focus style for accessibility */
+.btn input[type="submit"]:focus {
+  outline: none; /* Remove outline on focus */
+  box-shadow: 0 0 5px rgba(72, 163, 72, 0.7); /* Add a subtle green glow */
+}
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automation Software</title>
+    <link rel="stylesheet" href="/home.css">
+  </head>
+
+  <body>
+    <div class="main-body">
+      <header>
+        <div class="header">
+          <div class="logo">
+            <img src="/assets/logo.png" alt="business_logo">
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="hero">
+          <!-- This is Heading -->
+          <div class="heading">Profit & Loss Statements</div>
+          <!-- This is table 1 -->
+          <form action="/submit" method="post">
+            <table>
+              <tr>
+                <th class="table-head-statements">Statements</th>
+                <th class="table-head-year">2024-25</th>
+                <th class="table-head-year">2023-24</th>
+              </tr>
+              <tr>
+                <th>Revenue</th>
+              </tr>
+              <tr>
+                <td>Sales</td>
+                <td><input type="number" name="A1"  value="<%= data.A1 %>"/></td>
+                <td><input type="number" name="A2" value="<%= data.A2 %>"/></td>
+              </tr>
+              <tr>
+                <td>Scrap Sales</td>
+                <td><input type="number" name="B1" value="<%= data.B1 %>"/></td>
+                <td><input type="number" name="B2" value="<%= data.B2 %>"/></td>
+              </tr>
+              <tr>
+                <td>Interest Income</td>
+                <td><input type="number" name="C1" value="<%= data.C1 %>"/></td>
+                <td><input type="number" name="C2" value="<%= data.C2 %>"/></td>
+              </tr>
+              <tr>
+                <td>Other Revenue</td>
+                <td><input type="number" name="D1" value="<%= data.D1 %>"/></td>
+                <td><input type="number" name="D2" value="<%= data.D2 %>"/></td>
+              </tr>
+            </table>
+            <!-- Total Revenue Section -->
+            <table>
+              <tr>
+                <th class="table-head-statements">Total Revenue</th>
+                <th>Amount</th>
+                <th>Amount</th>
+              </tr>
+              <tr class="add-color">
+                <td>Total Revenue</td>
+                <td><b><%= data.Aprofit %></b></td>
+                <td><b><%= data.Bprofit %></b></td>
+              </tr>
+            </table>
+            <br /><br />
+            <!-- This is table 2 -->
+
+            <table>
+              <tr>
+                <th class="table-head-statements">Statements</th>
+                <th class="table-head-year">2024-25</th>
+                <th class="table-head-year">2023-24</th>
+              </tr>
+              <tr>
+                <th>Expenses</th>
+              </tr>
+              <tr>
+                <td>Cost Of Goods Sold</td>
+                <td><input type="number" name="E1" value="<%= data.E1 %>"/></td>
+                <td><input type="number" name="E2" value="<%= data.E2 %>"/></td>
+              </tr>
+              <tr>
+                <td>Wages</td>
+                <td><input type="number" name="F1" value="<%= data.F1 %>"/></td>
+                <td><input type="number" name="F2" value="<%= data.F2 %>"/></td>
+              </tr>
+              <tr>
+                <td>Rent</td>
+                <td><input type="number" name="G1" value="<%= data.G1 %>"></td>
+                <td><input type="number" name="G2" value="<%= data.G2 %>"/></td>
+              </tr>
+              <tr>
+                <td>Labour Charges</td>
+                <td><input type="number" name="H1" value="<%= data.H1 %>"/></td>
+                <td><input type="number" name="H2" value="<%= data.H2 %>"/></td>
+              </tr>
+            </table>
+            <!-- This is total Expenses Section -->
+            <table>
+              <tr>
+                <th class="table-head-statements">Total Expenses</th>
+                <th>Amount</th>
+                <th>Amount</th>
+              </tr>
+              <tr class="add-color">
+                <td>Total Expenses</td>
+                <td><b><%= data.Aloss %></b></td>
+                <td><b><%= data.Bloss %></b></td>
+              </tr>
+            </table>
+            <br /><br />
+            <!-- This is Profit/Loss before TAX -->
+
+            <table>
+              <tr>
+                <th class="table-head-statements">Income Before Tax</th>
+                <th>Amount</th>
+                <th>Amount</th>
+              </tr>
+              <tr class="add-color">
+                <td>Profit/Loss</td>
+                <td><b><%= data.Apbt %></b></td>
+                <td><b><%= data.Bpbt %></b></td>
+              </tr>
+            </table>
+            <br />
+            <!-- This is Profit/Loss after TAX -->
+            <table>
+              <tr>
+                <th class="table-head-statements">Income After Tax(18% GST)</th>
+                <th>Amount</th>
+                <th>Amount</th>
+              </tr>
+              <tr class="add-color">
+                <td>Profit/Loss</td>
+                <td><b><%= data.Apat %></b></td>
+                <td><b><%= data.Bpat %></b></td>
+              </tr>
+            </table>
+            <div class="btn">
+              <input type="submit" value="Check">
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- <footer><div class="footer">Thanks for Visiting Omnifin</div></footer> -->
+    </div>
+
+    <!-- Javascript Link -->
+  </body>
+</html>
