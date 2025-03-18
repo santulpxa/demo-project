@@ -114,3 +114,10 @@ input[type="number"]:focus {
   box-shadow: 0 0 5px rgba(72, 163, 72, 0.7); /* Add a subtle green glow */
 }
 
+/* Responsive */
+
+@media (max-width: 750px) {
+  input[type="number"] {
+    width: 70%; /* Set the width of the input */
+  }
+}
